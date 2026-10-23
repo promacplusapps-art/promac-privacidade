@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#07285d" />
+    <meta
+      name="description"
+      content="Política de Privacidade do aplicativo Promac Mobile."
+    />
+    <title>Política de Privacidade | Promac Mobile</title>
+    <style>
+      :root {
+        --navy: #06265a;
+        --blue: #0b4fa4;
+        --red: #e1262d;
+        --ink: #14243a;
+        --muted: #5d6b7e;
+        --line: #dfe6ef;
+        --paper: #ffffff;
+        --wash: #f4f7fb;
+      }
+
+      * { box-sizing: border-box; }
+
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--wash);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+      }
+
+      a { color: var(--blue); }
+      a:hover { color: var(--navy); }
+
+      .skip-link {
+        position: absolute;
+        left: -10000px;
+        top: auto;
+      }
+      .skip-link:focus {
+        top: 1rem;
+        left: 1rem;
+        z-index: 10;
+        padding: .65rem .9rem;
+        color: #fff;
+        background: var(--navy);
+        border-radius: .4rem;
+      }
+
+      .hero {
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        background: linear-gradient(116deg, #041d46 0%, #07377d 58%, #0c5cae 100%);
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        width: 42rem;
+        height: 42rem;
+        top: -30rem;
+        right: -11rem;
+        border: 3rem solid rgba(255, 255, 255, .055);
+        border-radius: 50%;
+      }
+
+      .hero-content, .page { width: min(100% - 2rem, 960px); margin: 0 auto; }
+
+      .hero-content { position: relative; z-index: 1; padding: 3.2rem 0 3rem; }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: .8rem;
+        margin-bottom: 2.25rem;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 750;
+        letter-spacing: .045em;
+        text-decoration: none;
+      }
+
+      .brand-logo {
+        width: 7.75rem;
+        height: auto;
+        padding: .25rem .35rem;
+        background: #fff;
+        border-radius: .3rem;
+      }
+
+      .eyebrow {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        margin: 0 0 .7rem;
+        color: #cfe4ff;
+        font-size: .78rem;
+        font-weight: 800;
+        letter-spacing: .095em;
+        text-transform: uppercase;
+      }
+      .eyebrow::before { content: ""; width: 1.9rem; height: .14rem; background: var(--red); }
+
+      h1, h2, h3 { line-height: 1.15; }
+      h1 {
+        max-width: 760px;
+        margin: 0;
+        font-size: clamp(2.15rem, 8vw, 4.05rem);
+        letter-spacing: -.045em;
+      }
+      .lead {
+        max-width: 700px;
+        margin: 1.1rem 0 0;
+        color: #e0edff;
+        font-size: clamp(1.02rem, 2vw, 1.18rem);
+      }
+      .last-updated { margin: 1.5rem 0 0; color: #bed8fb; font-size: .9rem; }
+
+      .page { padding: 2rem 0 4.5rem; }
+      .notice, .content, .quick-links { background: var(--paper); border: 1px solid var(--line); border-radius: 1rem; box-shadow: 0 12px 30px rgba(8, 33, 71, .06); }
+      .notice { display: flex; gap: 1rem; padding: 1.1rem 1.2rem; border-left: .34rem solid var(--red); }
+      .notice-icon { flex: 0 0 auto; display: grid; place-items: center; width: 2rem; height: 2rem; margin-top: .1rem; color: #fff; background: var(--red); border-radius: 50%; font-weight: 900; }
+      .notice p { margin: 0; font-size: .95rem; }
+
+      .quick-links { margin-top: 1.2rem; padding: 1.25rem; }
+      .quick-links strong { display: block; margin-bottom: .7rem; color: var(--navy); }
+      .quick-links nav { display: flex; flex-wrap: wrap; gap: .5rem; }
+      .quick-links a { padding: .35rem .65rem; color: var(--navy); background: #edf4ff; border-radius: 999px; font-size: .9rem; font-weight: 650; text-decoration: none; }
+      .quick-links a:hover { color: #fff; background: var(--blue); }
+
+      .content { margin-top: 1.2rem; padding: clamp(1.35rem, 5vw, 3rem); }
+      section + section { margin-top: 2.7rem; padding-top: 2.7rem; border-top: 1px solid var(--line); }
+      h2 { margin: 0 0 .9rem; color: var(--navy); font-size: clamp(1.4rem, 3vw, 1.85rem); letter-spacing: -.025em; }
+      h3 { margin: 1.45rem 0 .45rem; color: #173c71; font-size: 1.05rem; }
+      p { margin: .65rem 0; }
+      ul { margin: .75rem 0; padding-left: 1.25rem; }
+      li + li { margin-top: .45rem; }
+
+      .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; margin: 1.1rem 0 0; }
+      .fact { padding: 1rem; background: #f5f8fd; border-radius: .7rem; }
+      .fact b { display: block; color: var(--navy); font-size: .78rem; letter-spacing: .05em; text-transform: uppercase; }
+      .fact span { display: block; margin-top: .2rem; font-size: .94rem; line-height: 1.4; }
+
+      .callout { margin-top: 1.25rem; padding: 1.15rem 1.25rem; background: #fff9f9; border: 1px solid #f4cdd0; border-radius: .7rem; }
+      .callout strong { color: #9f1420; }
+
+      .rights { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; margin-top: 1.1rem; }
+      .right { padding: 1rem; border: 1px solid var(--line); border-radius: .7rem; }
+      .right b { color: var(--navy); }
+      .right p { margin: .3rem 0 0; color: var(--muted); font-size: .93rem; line-height: 1.5; }
+
+      .contact-box { padding: 1.4rem; color: #fff; background: linear-gradient(135deg, #06285f, #0d59a6); border-radius: .8rem; }
+      .contact-box h2 { color: #fff; }
+      .contact-box p { color: #e1efff; }
+      .contact-link { display: inline-block; margin-top: .55rem; padding: .7rem 1rem; color: var(--navy); background: #fff; border-radius: .5rem; font-weight: 800; text-decoration: none; }
+      .contact-link:hover { color: #fff; background: var(--red); }
+
+      footer { padding: 1.4rem 0 0; color: var(--muted); font-size: .88rem; text-align: center; }
+      .print { float: right; margin-top: .3rem; padding: .45rem .7rem; color: var(--navy); background: #fff; border: 1px solid var(--line); border-radius: .45rem; cursor: pointer; font: inherit; font-size: .85rem; font-weight: 700; }
+      .print:hover { background: #edf4ff; }
+
+      @media (max-width: 620px) {
+        .hero-content { padding: 2rem 0 2.25rem; }
+        .brand { margin-bottom: 1.5rem; }
+        .facts, .rights { grid-template-columns: 1fr; }
+        .content { padding: 1.35rem; }
+        section + section { margin-top: 2rem; padding-top: 2rem; }
+      }
+
+      @media print {
+        body { background: #fff; font-size: 11pt; }
+        .hero { color: #000; background: #fff; border-bottom: 2px solid var(--navy); }
+        .hero-content { padding: 0 0 1rem; }
+        .hero::after, .quick-links, .print, .notice-icon { display: none; }
+        .brand, .lead, .last-updated, .eyebrow { color: #000; }
+        .page { width: 100%; padding: 1rem 0; }
+        .notice, .content { box-shadow: none; border-color: #bbb; }
+        .content { padding: 0; border: 0; }
+        .contact-box { color: #000; background: #fff; border: 1px solid #aaa; }
+        .contact-box h2, .contact-box p { color: #000; }
+        .contact-link { padding: 0; color: #000; }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <header class="hero">
+      <div class="hero-content">
+        <a class="brand" href="#inicio" aria-label="PROMAC Industrial">
+          <img class="brand-logo" src="public/assets/promac-logo.png" alt="PROMAC" />
+          <span>INDUSTRIAL</span>
+        </a>
+        <p class="eyebrow">Promac Mobile</p>
+        <h1 id="inicio">Política de Privacidade</h1>
+        <p class="lead">Informações claras sobre o tratamento de dados pessoais no aplicativo Promac Mobile.</p>
+        <p class="last-updated">Última atualização: 23 de outubro de 2026</p>
+      </div>
+    </header>
+
+    <main id="conteudo" class="page">
+      <aside class="notice" aria-label="Resumo da política">
+        <span class="notice-icon" aria-hidden="true">i</span>
+        <p>O Promac Mobile é destinado a parceiros da PROMAC. Para realizar os serviços relacionados ao emplacamento e à regularização veicular, o aplicativo pode tratar dados de identificação, do veículo, imagens e documentos, localização e informações obtidas pela câmera.</p>
+      </aside>
+
+      <div class="quick-links">
+        <strong>Encontre uma informação</strong>
+        <nav aria-label="Navegação nesta política">
+          <a href="#quem-somos">Quem somos</a>
+          <a href="#dados">Dados tratados</a>
+          <a href="#finalidades">Finalidades</a>
+          <a href="#compartilhamento">Compartilhamento</a>
+          <a href="#direitos">Seus direitos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+
+      <article class="content">
+        <button class="print" type="button" onclick="window.print()">Imprimir política</button>
+
+        <section id="quem-somos">
+          <h2>1. Quem é responsável pelos seus dados</h2>
+          <p>Esta Política descreve como a <strong>PROMAC INDUSTRIAL - PRODUTOS DE METAIS LTDA</strong> trata dados pessoais no aplicativo <strong>Promac Mobile</strong>, disponível para parceiros da PROMAC, e nos canais digitais associados a ele.</p>
+          <div class="facts" aria-label="Dados do controlador">
+            <div class="fact"><b>Controladora</b><span>PROMAC INDUSTRIAL - PRODUTOS DE METAIS LTDA</span></div>
+            <div class="fact"><b>CNPJ</b><span>07.451.574/0004-78</span></div>
+            <div class="fact"><b>Canal de privacidade</b><span>promac@promac.ind.br</span></div>
+          </div>
+          <p>Adotamos esta Política em conformidade com a Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais — LGPD).</p>
+        </section>
+
+        <section id="dados">
+          <h2>2. Quais dados podem ser tratados</h2>
+          <p>Tratamos somente os dados necessários para disponibilizar e operar as funcionalidades do Promac Mobile, apoiar o parceiro e atender aos requisitos aplicáveis aos serviços de emplacamento e regularização veicular.</p>
+
+          <h3>Dados fornecidos ou vinculados ao atendimento</h3>
+          <ul>
+            <li><strong>Dados de identificação e contato:</strong> como nome, CPF, dados profissionais e informações de contato, quando necessários para acesso, cadastro e atendimento.</li>
+            <li><strong>Dados do veículo e do serviço:</strong> como placa, chassi, RENAVAM, informações de propriedade, características do veículo, status e registros relacionados ao processo de emplacamento ou regularização.</li>
+            <li><strong>Documentos e imagens:</strong> fotografias, arquivos e imagens de documentos necessários para instruir, comprovar ou acompanhar o serviço.</li>
+          </ul>
+
+          <h3>Dados obtidos pelo uso do aparelho</h3>
+          <ul>
+            <li><strong>Câmera:</strong> quando você aciona a função de fotografar ou digitalizar documentos, veículos ou evidências relacionadas ao serviço.</li>
+            <li><strong>Localização:</strong> quando necessária para registrar ou validar a execução do serviço, conforme a funcionalidade utilizada e as permissões concedidas no seu aparelho.</li>
+            <li><strong>Dados técnicos:</strong> informações necessárias para funcionamento, segurança e diagnóstico do aplicativo, como modelo do aparelho, sistema operacional, versão do aplicativo, identificadores técnicos, registros de acesso e falhas.</li>
+          </ul>
+
+          <p>Os dados podem ser fornecidos diretamente por você, obtidos por meio do seu dispositivo ao usar o aplicativo ou recebidos de órgãos e sistemas envolvidos no processo de emplacamento, quando isso for necessário e permitido.</p>
+        </section>
+
+        <section id="finalidades">
+          <h2>3. Por que tratamos esses dados</h2>
+          <p>Utilizamos os dados pessoais para:</p>
+          <ul>
+            <li>permitir o acesso de parceiros e a execução das funcionalidades do Promac Mobile;</li>
+            <li>realizar, registrar, instruir e acompanhar processos de emplacamento, regularização e serviços relacionados;</li>
+            <li>capturar e validar imagens, documentos, informações do veículo e localização quando a funcionalidade exigir;</li>
+            <li>prestar suporte, responder solicitações e comunicar informações relacionadas ao serviço;</li>
+            <li>prevenir fraudes, acessos indevidos, inconsistências e outras situações que possam comprometer a segurança do serviço;</li>
+            <li>cumprir obrigações legais, regulatórias e solicitações de autoridades competentes; e</li>
+            <li>manter registros necessários para auditoria, exercício regular de direitos e defesa em processos administrativos, judiciais ou arbitrais.</li>
+          </ul>
+          <p>Conforme o caso, o tratamento é baseado na execução de contrato ou de procedimentos relacionados, no cumprimento de obrigação legal ou regulatória, no exercício regular de direitos, no legítimo interesse da PROMAC ou de terceiros e no seu consentimento, quando ele for exigido.</p>
+        </section>
+
+        <section id="compartilhamento">
+          <h2>4. Com quem os dados podem ser compartilhados</h2>
+          <p>O Promac Mobile pode compartilhar dados pessoais com <strong>órgãos de trânsito, incluindo órgãos do Detran</strong>, quando isso for necessário para viabilizar processos de emplacamento, regularização, validação, registro, cumprimento de exigências legais ou atendimento de solicitações oficiais.</p>
+          <p>Também podemos compartilhar dados com prestadores de serviços que atuam em nosso nome, como fornecedores de tecnologia, hospedagem, suporte e segurança. Esses parceiros somente recebem os dados necessários para a finalidade contratada e devem seguir obrigações de confidencialidade, segurança e proteção de dados.</p>
+          <p>Dados também poderão ser comunicados a autoridades públicas, órgãos reguladores ou judiciais quando houver obrigação legal, ordem válida ou necessidade de exercício regular de direitos.</p>
+          <div class="callout"><strong>Transparência importante:</strong> o compartilhamento com órgãos de trânsito faz parte do funcionamento dos serviços relacionados ao emplacamento. Por isso, a informação de que o aplicativo não compartilha dados com terceiros deve ser atualizada no formulário de Segurança dos Dados do Google Play para refletir a operação real.</div>
+        </section>
+
+        <section id="retencao">
+          <h2>5. Por quanto tempo guardamos os dados</h2>
+          <p>Conservamos os dados pelo tempo necessário para cumprir as finalidades desta Política, prestar o serviço e atender obrigações legais ou regulatórias. Após esse período, os dados serão eliminados, anonimizados ou mantidos apenas nas hipóteses permitidas pela legislação, como cumprimento de obrigação legal, auditoria, prevenção a fraudes e exercício regular de direitos.</p>
+        </section>
+
+        <section id="seguranca">
+          <h2>6. Como protegemos os dados</h2>
+          <p>Adotamos medidas técnicas e administrativas proporcionais à natureza dos dados e aos riscos envolvidos para reduzir acessos não autorizados, perdas, alterações, divulgações ou usos indevidos. Essas medidas incluem controles de acesso, gestão de permissões, registros de segurança e procedimentos de resposta a incidentes.</p>
+          <p>Nenhum ambiente digital é absolutamente livre de riscos. Caso ocorra um incidente relevante que possa gerar risco ou dano aos titulares, adotaremos as medidas aplicáveis, inclusive comunicações quando exigidas pela legislação.</p>
+        </section>
+
+        <section id="direitos">
+          <h2>7. Seus direitos como titular de dados</h2>
+          <p>A LGPD garante a você, observadas as situações previstas em lei, os seguintes direitos:</p>
+          <div class="rights">
+            <div class="right"><b>Confirmação e acesso</b><p>Saber se tratamos seus dados e solicitar acesso às informações relacionadas.</p></div>
+            <div class="right"><b>Correção</b><p>Pedir a atualização de dados incompletos, inexatos ou desatualizados.</p></div>
+            <div class="right"><b>Anonimização, bloqueio ou eliminação</b><p>Solicitar providências sobre dados desnecessários, excessivos ou tratados em desconformidade.</p></div>
+            <div class="right"><b>Portabilidade</b><p>Solicitar a portabilidade quando aplicável e conforme regulamentação da autoridade competente.</p></div>
+            <div class="right"><b>Informação sobre compartilhamentos</b><p>Conhecer as entidades públicas e privadas com as quais houve uso compartilhado de dados.</p></div>
+            <div class="right"><b>Revogação do consentimento</b><p>Revogar o consentimento quando ele for a base legal do tratamento, sem afetar tratamentos anteriores válidos.</p></div>
+          </div>
+          <p>Alguns pedidos podem ter limitações quando a retenção for necessária por obrigação legal, regulatória, segurança, prevenção a fraudes ou exercício regular de direitos. Nesses casos, explicaremos a razão aplicável.</p>
+        </section>
+
+        <section id="permissoes">
+          <h2>8. Permissões do aparelho</h2>
+          <p>Você pode revisar ou alterar as permissões de câmera e localização nas configurações do seu aparelho. A desativação de uma permissão pode impedir ou limitar recursos que dependam dela, como captura de imagens, validação de local ou envio de informações do serviço.</p>
+        </section>
+
+        <section id="links">
+          <h2>9. Links de terceiros</h2>
+          <p>O aplicativo ou esta página pode direcionar você a serviços de terceiros. A PROMAC não controla suas práticas de privacidade; por isso, recomendamos a leitura das políticas próprias de cada serviço antes de fornecer dados pessoais.</p>
+        </section>
+
+        <section id="alteracoes">
+          <h2>10. Alterações nesta Política</h2>
+          <p>Podemos atualizar esta Política para refletir mudanças no aplicativo, nas práticas de tratamento de dados ou na legislação. A versão vigente estará sempre disponível nesta página, com a data da última atualização indicada no início do documento.</p>
+        </section>
+
+        <section id="contato">
+          <div class="contact-box">
+            <h2>11. Fale conosco sobre privacidade</h2>
+            <p>Para exercer seus direitos, solicitar informações, pedir exclusão de dados quando aplicável ou tirar dúvidas sobre esta Política, envie uma mensagem para nosso canal de privacidade.</p>
+            <a class="contact-link" href="mailto:promac@promac.ind.br?subject=Solicita%C3%A7%C3%A3o%20de%20privacidade%20-%20Promac%20Mobile">promac@promac.ind.br</a>
+          </div>
+        </section>
+      </article>
+
+      <footer>
+        PROMAC INDUSTRIAL - PRODUTOS DE METAIS LTDA · CNPJ 07.451.574/0004-78
+      </footer>
+    </main>
+  </body>
+</html>
